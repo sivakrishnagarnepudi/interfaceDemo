@@ -5,7 +5,8 @@ public class AC {
 
 
 
-    public AC(String acPoints){
+    public AC(String acPoints)
+    {
         this.acPoints=acPoints;
     }
     public String getAcPoints() {

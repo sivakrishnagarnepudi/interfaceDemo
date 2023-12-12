@@ -1,15 +1,19 @@
 package interfaceDemo;
 
-public abstract class TataCar {
+import interfaceDemo.MyCar;
+
+public abstract class TataCar implements MyCar {
 
         public abstract void carWheel();
         public abstract void carColor();
+        public abstract void skyRoof();
         public  void getCar () {
             AC ac = getacPoints();
             Engine engine = getengine();
             Controls controls = getcontrols();
             carWheel();
             carColor();
+            skyRoof();
             System.out.println(ac.getAcPoints());
             System.out.println(engine.getTypeofengine());
             System.out.println("car cc:" + engine.getTypeofmodel());
